@@ -1,6 +1,6 @@
 ﻿import RPi.GPIO as GPIO
 import time
-GPIO.setmode(GPIO.BOARD) 
+GPIO.setmode(GPIO.BCM) 
 rows= [24,25,26,20]
 cols= [27,22,23]
 
