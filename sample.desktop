@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name = PiPlayerDemo
+Name = sample
 Comment=Python Program
-Exec=python /home/pi/PiPlayerDemo4.py
+Exec=python /home/pi/sample.py
 Icon=/home/pi/TsaimingRoboWheelMARK.jpg
 Terminal=false
 MutipleArgs=false
