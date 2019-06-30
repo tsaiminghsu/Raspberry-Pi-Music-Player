@@ -10,3 +10,8 @@
 ### Type=Application 
 ### Categories=Application;Development; 
 ### StartupNotify=true
+### Name、Comment、Icon 可以自定,表示啟動項的名稱、備註和圖示。Exec 表示呼叫的指令,和在終端輸入執行指令碼的指令格式一致。如果你的樹莓派沒有png圖示,那麼就和我一樣,找到python_game資料夾,那裡有幾個簡單的圖示可以現成拿來使用。
+
+
+### sudo reboot 
+### 重啟, test.py 就開機自動運行了。
