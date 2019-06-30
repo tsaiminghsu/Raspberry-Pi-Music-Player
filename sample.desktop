@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name = PiPlayerDemo
+Comment=Python Program
+Exec=python /home/pi/PiPlayerDemo4.py
+Icon=/home/pi/TsaimingRoboWheelMARK.jpg
+Terminal=false
+MutipleArgs=false
+Type=Application
+Categories=Application;Development;
+StartupNotify=true
