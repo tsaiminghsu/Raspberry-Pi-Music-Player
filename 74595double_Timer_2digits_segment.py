@@ -12,33 +12,23 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
 # Setup 74HC595 Shift Registor pins
-DS   = 6     # Serial Data
-SHCP = 12     # Clock
-STCP = 21     # Latch
+DS   = 12     # Serial Data
+SHCP = 21     # Clock
+STCP = 20     # Latch
 GPIO.setup(DS, GPIO.OUT)
 GPIO.setup(SHCP, GPIO.OUT)
 GPIO.setup(STCP, GPIO.OUT)
 # Setup 7 segment display ,Q7 ~ Q1
-seg = [#[0,0,0,0,0,0,1],#0
-       [1,0,0,0,0,0,0],#0
-       #[1,0,0,1,1,1,1],#1
-       [1,1,1,1,0,0,1],#1
-       #[0,0,1,0,0,1,0],#2
-       [0,1,0,0,1,0,0],#2
-       #[0,0,0,0,1,1,0],#3
-       [0,1,1,0,0,0,0],#3
-       #[1,0,0,1,1,0,0],#4
-       [0,0,1,1,0,0,1],#4
-       #[0,1,0,0,1,0,0],#5
-       [0,0,1,0,0,1,0],#5
-       #[0,1,0,0,0,0,0],#6
-       [0,0,0,0,0,1,0],#6
-       #[0,0,0,1,1,1,1],#7
-       [1,1,1,1,0,0,0],#7
-       #[0,0,0,0,0,0,0],#8
+seg = [[0,0,0,0,0,0,1],#0
+       [1,0,0,1,1,1,1],#1
+       [0,0,1,0,0,1,0],#2
+       [0,0,0,0,1,1,0],#3
+       [1,0,0,1,1,0,0],#4
+       [0,1,0,0,1,0,0],#5
+       [0,1,0,0,0,0,0],#6
+       [0,0,0,1,1,1,1],#7
        [0,0,0,0,0,0,0],#8
-       #[0,0,0,0,1,0,0] #9
-       [0,0,1,0,0,0,0]
+       [0,0,0,0,1,0,0] #9
        ]
 # Send Clock signal
 def clock(pin):
@@ -67,7 +57,7 @@ def display(index, dot):
 try:
     for i in range(100):
         display(i,1)
-        print(str(display(i,1)))
+        #print(str(display(i,1)))
         time.sleep(0.5)
     time.sleep(10)
 finally:
