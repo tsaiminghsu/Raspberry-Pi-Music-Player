@@ -16,3 +16,4 @@
 ### sudo reboot 
 ### 重啟, test.py 就開機自動運行了。
 ![image](https://github.com/tsaiminghsu/Python/blob/master/TwoDigitsCounter_74595.png)
+### 更新PiPlayerDemo9.py
