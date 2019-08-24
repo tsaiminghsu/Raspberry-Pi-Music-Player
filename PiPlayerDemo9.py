@@ -120,6 +120,7 @@ while True:
                       key_input += key
                   if len(key_input)>2:
                       key_input=''
+                      display(0,1)
                   else:
                       display(int(key_input),1)
                   print(key_input)
