@@ -143,7 +143,7 @@ while True:
             #break
             #st=1
         else:
-          #fi = player.poll()
+          fi = player.poll()
           if (fi==0 and st==0):
               flag=1
         sleep(0.1)
